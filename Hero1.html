@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HerostudyCode</title>
+      <meta charset="UTF-8">
+   </head>
+   <body>
+      <h1>Xin chào mọi người</h1>
+      <h2>Đăng nhập</h2>
+      <form>
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username"><br><br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         <input type="button" value="Login" onclick="checkLogin()">
+      </form>
+      <script>
+         function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username === "Hung" && password === "1234") {
+               alert("Xin chúc mừng bạn đã dùng đúng password");
+            } else {
+               alert("Tên đăng nhập hoặc mật khẩu không đúng.");
+            }
+         }
+      </script>
+   </body>
+</html>
